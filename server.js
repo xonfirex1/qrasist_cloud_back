@@ -32,7 +32,7 @@ app.post('/qrasist_cloud_back', (req, res) => {
   const { rut, numDocumento, fechaDesde, fechaHasta } = req.body;
 
   const query = `
-    SELECT * FROM asistencias 
+    SELECT * FROM asistenciascloud 
     WHERE RutTrabajador = ? AND NumDocumento = ? 
     AND Fecha BETWEEN ? AND ?
   `;
