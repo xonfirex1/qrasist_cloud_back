@@ -10,7 +10,7 @@ app.use(express.json());
 
 // Configuración de la base de datos para PostgreSQL
 const pool = new Pool({
-  connectionString: 'postgresql://postgres:1234@localhost:5432/qr_assist_control',
+  connectionString: 'postgresql://postgres:12345678@qrassistcloud.ca5xep4rpd0x.sa-east-1.rds.amazonaws.com:5432/qr_assist_control',
 });
 
 // Endpoint para consultar asistencias
